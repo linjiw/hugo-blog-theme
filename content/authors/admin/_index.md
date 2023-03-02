@@ -6,7 +6,7 @@ title: Linji Wang (王琳箕)
 superuser: true
 
 # Role/position
-role: Incoming PhD Student at To Be Determined 
+role: MS student at Carnegie Mellon University
 
 # Status emoji
 status:
@@ -28,9 +28,9 @@ interests:
 
 education:
  courses:
- - course: PhD in Computer Science
-   institution: To Be Determined
-   year: 2027
+#  - course: PhD in Computer Science
+#    institution: To Be Determined
+#    year: 2027
  - course: MS in Mechanical Engineering
    institution: Carnegie Mellon University
    year: 2023
