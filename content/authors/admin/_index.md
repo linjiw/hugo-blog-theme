@@ -10,7 +10,7 @@ role: MS student at Carnegie Mellon University
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🥳
 
 # Organizations/Affiliations
 organizations:
