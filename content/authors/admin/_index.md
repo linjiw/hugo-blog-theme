@@ -65,6 +65,9 @@ social:
 - icon: cv
   icon_pack: ai
   link: files/cv.pdf
+- icon: book-open-reader
+  icon_pack: fas
+  link: 'https://joewang.notion.site/f9e58b77b242444abea672542d537866?v=ff94b5d39c174fb6a99a54ffaf7f5a35'
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 #email: ""
