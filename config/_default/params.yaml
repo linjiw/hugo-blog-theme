@@ -15,8 +15,8 @@ font_size: L
 site_type: Person
 local_business_type: ''
 org_name: ''
-description: 'A AI student's resume and blog.'
-# twitter: 'wowchemy'
+description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
+twitter: 'wowchemy'
 
 # Site header
 
@@ -51,7 +51,7 @@ edit_page:
     post: false
 show_related:
   post: true
-email: joewwang@outlook.com
+email: test@example.org
 sharing_image: ''
 reading_time: true
 section_pager: true
