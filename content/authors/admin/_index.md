@@ -73,5 +73,5 @@ social:
 #email: ""
 ---
 
-Linji Wang is a master student of mechanical engineering at the Carnegie Mellon. His research interests include robotics, computer vision and reinforcement learning. 
+Linji Wang is a highly motivated and accomplished individual with a passion for computer science and mechanical engineering. He holds a Master of Science in Mechanical Engineering from Carnegie Mellon University, where he focused on machine learning, computer vision, and deep reinforcement learning. Linji also earned a Bachelor of Science in Mechanical Engineering from the University of Cincinnati, where he participated in a joint program with Chongqing University in China.
 
