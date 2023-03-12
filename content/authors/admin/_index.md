@@ -6,7 +6,7 @@ title: Linji Wang (王琳箕)
 superuser: true
 
 # Role/position
-role: MS student at Carnegie Mellon University
+role: Incoming PhD Student
 
 # Status emoji
 status:
@@ -18,7 +18,7 @@ organizations:
   url: "https://www.cmu.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include robotics, computer vision and reinforcement learning.
+bio: MS student at CMU
 
 interests:
 - Artificial Intelligence
@@ -32,7 +32,7 @@ education:
 #    institution: To Be Determined
 #    year: 2027
  - course: MS in Mechanical Engineering
-   institution: Carnegie Mellon University
+   institution: [Carnegie Mellon University](https://www.cmu.edu/)
    year: 2023
  - course: BSc in Mechanical Engineering
    institution: University of Cincinnati
