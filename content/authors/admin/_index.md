@@ -32,11 +32,13 @@ education:
 #    institution: To Be Determined
 #    year: 2027
  - course: MS in Mechanical Engineering
-   institution: [Carnegie Mellon University](https://www.cmu.edu/)
+   institution: Carnegie Mellon University
    year: 2023
+   url: "https://www.cmu.edu/"
  - course: BSc in Mechanical Engineering
    institution: University of Cincinnati
    year: 2021
+   url: "https://www.uc.edu/"
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
