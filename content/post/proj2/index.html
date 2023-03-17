@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HW 2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://fred-wang.github.io/TeXZilla/TeXZilla-min.js"></script>
+    <script src="https://fred-wang.github.io/TeXZilla/examples/customElement.js"></script>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 50%;
+      }
+      th, td {
+        padding: 8px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+
+  
+    </style>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      .mySlides {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a
+          href="#band"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >About Me</a
+        >
+
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">
+            Projects <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#proj_0" class="w3-bar-item w3-button">Project0</a>
+            <a href="#proj_1" class="w3-bar-item w3-button">Project1</a>
+            <a href="#proj_2" class="w3-bar-item w3-button">Project2</a>
+
+            <!-- <a href="#" class="w3-bar-item w3-button">Media</a> -->
+          </div>
+          
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+          ><i class="fa fa-search"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <!-- <div
+      id="navDemo"
+      class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+      style="margin-top: 46px"
+    >
+      <a
+        href="#band"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >BAND</a
+      >
+      <a
+        href="#tour"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >TOUR</a
+      >
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >CONTACT</a
+      >
+      <a
+        href="#"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >MERCH</a
+      >
+    </div> -->
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+      <!-- Automatic Slideshow Images -->
+      <div class="mySlides w3-display-container w3-center">
+        <img src="./data/results_source_07_newsource_target_07Mixed Blend.jpg" style="width: 50%" />
+        <!-- <div
+          class="w3-display-bottommiddle w3-container w3-text-black w3-padding-64 w3-hide-small"
+        >
+          <h1>Harvesters</h1>
+          <p><b>Almost aligned : )</b></p>
+        </div> -->
+      </div>
+      <!-- <div class="mySlides w3-display-container w3-center">
+        <img src="/w3images/ny.jpg" style="width: 100%" />
+        <div
+          class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+        >
+          <h3>New York</h3>
+          <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+        </div>
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/w3images/chicago.jpg" style="width: 100%" />
+        <div
+          class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
+        >
+          <h3>Chicago</h3>
+          <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+        </div> -->
+    </div>
+
+    <!-- The Band Section -->
+    <div
+      class="w3-container w3-content w3-center w3-padding-64"
+      style="max-width: 800px"
+      id="band"
+    >
+
+      <h2 class="w3-wide" id="#Project1">Gradient Domain Fusion</h2>
+      <p class="w3-opacity"><i>by Linji Wang, Feb 07, 2023</i></p>
+      <h3> Overview</h3>
+
+      <table>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+        <tr>
+          <td><img src="data/source_05.jpg" alt="Image 1" style="width: 50%"></td>
+          <td><img src="data/source_05.jpg" alt="Image 1" style="width: 50%"></td>
+          <td><img src="data/source_05.jpg" alt="Image 1" style="width: 50%"></td>
+        </tr>
+        <tr>
+          <td><img src="data/source_05.jpg" alt="Image 1" style="width: 50%"></td>
+          <td><img src="data/source_05.jpg" alt="Image 1" style="width: 50%"></td>
+          <td><img src="data/source_05.jpg" alt="Image 1" style="width: 50%"></td>
+        </tr>
+        <!-- add more rows here -->
+      </table>
+      <p class="w3-justify"> Welcome to our website about Gradient Domain Fusion, a powerful technique that allows for seamless merging of multiple images into a single high-quality output. Our project aims to explore this technique and provide a detailed guide on how to implement it effectively. <br>
+        Whether you are a professional photographer or a hobbyist looking to take your images to the next level, our website is the perfect resource to learn about and master Gradient Domain Fusion. So, let's get started and unlock the full potential of this exciting technique!
+        <!-- <img src="./data/source_07_newsource_target_07Mixed Blend.jpg" style="width: 40%" /> -->
+        <!-- <p span = "caption">Figure 1. Digitized Glass Plate: Cathedral</p> -->
+        <!-- <h3> Pre-processing</h3> -->
+        <!-- <p class="w3-justify">From the original image</p> -->
+        
+        <h3> Toy Problem</h3>
+        <p class="w3-justify"> 
+          In this toy example, we're trying to reconstruct an image called "v" using some information we get from another image called "s". Specifically, we're going to use the x and y gradients of the image s, as well as the intensity of one of its pixels.
+          <br>
+          <br>Now, you might be wondering what "x and y gradients" mean. Think of it this way: imagine looking at a picture of a mountain. If you wanted to describe how the brightness of the image changes as you move your eyes across it, you might say something like "the brightness gets darker as you move up the mountain, and lighter as you move down." That's kind of what we mean by "gradients" - they describe how the brightness (or "intensity") of an image changes in different directions.
+          <br>
+          <br>So, to summarize: we have one image called "s", and we're going to use its x and y gradients (which describe how the brightness changes in different directions) and the intensity of one pixel to create a new image called "v". The process isn't too complicated, but it's easy to make mistakes, so we're starting with a simple example to make sure we get it right.      
+          <p class="w3-justify"><b>Results: toy problem</b> Left side: Original image; Right side: Reconstructed Image
+          <!-- <la-tex display="block">SSD = \sum_{x,y}({H_{x,y} - I_{x,y}})</la-tex> -->
+        </p> -->
+        <!-- <img> -->
+        <img src="./data/toy_reconstruction.png" style="width: 40%" />
+        <h3> Poisson Blending</h3>
+        <p class="w3-justify"> 
+          The first step in Poisson blending is to identify the target region in the image, which is the area where we want to blend the images together. For example, if we have two images of a person and a background, the target region might be the outline of the person.
+          <br><br>
+          Next, we need to construct blending constraints. The goal of these constraints is to ensure that the blended image looks seamless and natural. We do this by making sure that the brightness or intensity of the target region is consistent with the gradients of the source and target images.
+          <br><br>
+          To create these constraints, we use the gradient of the images. The gradient describes how the brightness or intensity of the image changes in different directions. We create a set of equations that relate the gradient of the target region to the gradients of the source and target images. These equations are based on the observation that the gradient of the target region should be equal to the gradient of the source image in the non-target region, so as to ensure smooth blending.
+          <br><br>
+          Once we have the blending constraints, we need to solve a least squares problem to find the values for each pixel in the target region that satisfy these constraints. The solution involves finding the values that minimize the difference between the gradient of the target region and the gradients of the source and target images, subject to the blending constraints. This can be done using numerical optimization methods.
+          <br><br>
+          Finally, we construct the blended image by copying the pixels from the source image into the target region, adjusting their colors and intensities according to the solution of the linear equations. This creates a smooth transition between the target region and the rest of the image, resulting in a final image that looks natural and seamless.
+          <br><br>
+          In summary, Poisson blending involves identifying the target region, constructing blending constraints based on the gradients of the images, solving a least squares problem to find the values for each pixel in the target region, and then constructing the final image by copying the pixels from the source image and adjusting their colors and intensities. The result is a seamless and natural-looking image. <p class="w3-justify">
+            <b>Results: poisson blend</b> Left side: Naive Blend; Right side: Poisson Blend
+          <!-- <la-tex display="block">SSD = \sum_{x,y}({H_{x,y} - I_{x,y}})</la-tex> -->
+        </p> -->
+        <!-- <img> -->
+        <img src="./data/source_01.jpg" style="width: 80%" />
+        <p span="caption"> Source: A Bear</p>
+
+        <img src="./data/source_01_newsource_target_01Blend.jpg" style="width: 100%" />
+        <p span="caption"> A Bear swimming with a girl in a pool</p>
+
+        <img src="./data/source_2.jpg" style="width: 80%" />
+        <p span="caption"> Source: A Whale</p>
+
+        <img src="./data/source_2_newsource_target_2Blend.jpg" style="width: 100%" />
+        <p span="caption"> A Whale swimming at the sea of Boston</p>
+        <img src="./data/source_03.jpg" style="width: 80%" />
+        <p span="caption"> Source: A man</p>
+
+        <img src="./data/source_03_newsource_target_03Blend.jpg" style="width: 100%" />
+        <p span="caption"> Mona Lisa with a man's face</p>
+        <img src="./data/source_04.jpg" style="width: 80%" />
+        <p span="caption"> Source: A cat</p>
+
+        <img src="./data/source_04_newsource_target_04Blend.jpg" style="width: 100%" />
+        <p span="caption"> A cat with another cat's face</p>
+        <img src="./data/source_05.jpg" style="width: 80%" />
+        <p span="caption"> Source: A cat</p>
+
+        <img src="./data/source_05_newsource_target_05Blend.jpg" style="width: 100%" />
+        <p span="caption"> A cat with another cat's face</p>
+        <img src="./data/source_06.jpg" style="width: 80%" />
+        <p span="caption"> Source: A snowman</p>
+
+        <img src="./data/source_06_newsource_target_06Blend.jpg" style="width: 100%" />
+        <p span="caption"> A snowman standing at The Mall, CMU       </p>
+
+        <img src="./data/source_07.jpg" style="width: 80%" />
+        <p span="caption"> Source: A painting</p>
+
+        <img src="./data/source_07_newsource_target_07Blend.jpg" style="width: 100%" />
+        <p span="caption"> A painting at College of Fine Arts Lawn, CMU        </p>
+        <h3> Mixed Poisson blending</h3>
+        <p class="w3-justify"> 
+          To elaborate, Mixed Poisson blending is a variation of Poisson blending that is used to blend images with different color channels or color spaces. The process involves identifying the target region, constructing blending constraints, and solving a least squares problem to find the values for each pixel in the target region.
+<br><br>
+The blending constraints are based on the idea that the brightness or intensity of the image should be consistent across the boundary between the target region and the rest of the image. In Mixed Poisson blending, these constraints are constructed by taking the greatest gradient in the image and using it to construct a sparse matrix.
+<br><br>
+
+The sparse matrix is used to solve the least squares problem, which involves finding the values for each pixel in the target region that satisfy the blending constraints. The solution involves using iterative methods to find the optimal solution that minimizes the difference between the gradients of the target region and the greatest gradient of the image, subject to the blending constraints.
+<br><br>
+
+The resulting pixel values are combined to create the final blended image, which maintains the colors and textures of each image while appearing seamless and natural.
+<br><br>
+
+In summary, Mixed Poisson blending is used to blend images with different color channels or color spaces. The blending constraints are constructed using the greatest gradient in the image to create a sparse matrix, which is then used to solve the least squares problem and find the pixel values in the target region. The resulting blended image maintains the colors and textures of each image, while appearing seamless and natural.       
+<b>Results: Mixed poisson blend</b> Left side: Naive Blend; Right side: Mixed Poisson Blend
+          <!-- <la-tex display="block">SSD = \sum_{x,y}({H_{x,y} - I_{x,y}})</la-tex> -->
+     
+          <h3> Mixed Poisson blending</h3>
+        </p> -->
+        <img src="./data/source_01.jpg" style="width: 80%" />
+        <p span="caption"> Source: A Bear</p>
+
+        <img src="./data/source_01_newsource_target_01Mixed Blend.jpg" style="width: 100%" />
+        <p span="caption"> A Bear swimming with a girl in a pool</p>
+
+        <img src="./data/source_2.jpg" style="width: 80%" />
+        <p span="caption"> Source: A Whale</p>
+
+        <img src="./data/source_2_newsource_target_2Mixed Blend.jpg" style="width: 100%" />
+        <p span="caption"> A Whale swimming at the sea of Boston</p>
+        <img src="./data/source_03.jpg" style="width: 80%" />
+        <p span="caption"> Source: A man</p>
+
+        <img src="./data/source_03_newsource_target_03Mixed Blend.jpg" style="width: 100%" />
+        <p span="caption"> Mona Lisa with a man's face</p>
+        <img src="./data/source_04.jpg" style="width: 80%" />
+        <p span="caption"> Source: A cat</p>
+
+        <img src="./data/source_04_newsource_target_04Mixed Blend.jpg" style="width: 100%" />
+        <p span="caption"> A cat with another cat's face</p>
+        <img src="./data/source_05.jpg" style="width: 80%" />
+        <p span="caption"> Source: A cat</p>
+
+        <img src="./data/source_05_newsource_target_05Mixed Blend.jpg" style="width: 100%" />
+        <p span="caption"> A cat with another cat's face</p>
+        <img src="./data/source_06.jpg" style="width: 80%" />
+        <p span="caption"> Source: A snowman</p>
+
+        <img src="./data/source_06_newsource_target_06Mixed Blend.jpg" style="width: 100%" />
+        <p span="caption"> A snowman standing at The Mall, CMU       </p>
+
+        <img src="./data/source_07.jpg" style="width: 80%" />
+        <p span="caption"> Source: A painting</p>
+        <img src="./data/source_07_newsource_target_07Mixed Blend.jpg" style="width: 100%" />
+        <p span="caption"> A painting at College of Fine Arts Lawn, CMU        </p>
+
+        <h3> Color2Gray</h3>
+        <p class="w3-justify">
+          The color2gray problem refers to the challenge of converting a color image to a grayscale image while preserving the essential information. Grayscale images are often used in applications such as printing, where color images may not be necessary or may be too expensive to produce.
+<br><br>
+One approach to solving the color2gray problem is to convert the image to the HSV (Hue, Saturation, Value) color space. The HSV color space separates color information into three channels: Hue, Saturation, and Value. The Hue channel represents the color itself, while the Saturation and Value channels represent the intensity of the color.
+<br><br>
+In the HSV color space, we can notice the color difference between channels, which can help us to preserve the essential information when converting to grayscale. One technique for converting an HSV image to grayscale is to use Mixed Poisson Blending. This technique involves solving a least squares problem that takes into account the greatest gradient in the image to construct a sparse matrix. The sparse matrix is used to find the values for each pixel in the target region, resulting in a grayscale image that maintains the essential information from the original color image.
+<br><br>
+In summary, the color2gray problem refers to the challenge of converting a color image to grayscale while preserving the essential information. In the HSV color space, we can notice the color difference between channels, and Mixed Poisson Blending can be used to solve the color2gray problem while maintaining the essential information.
+
+
+
+
+
+        </p>
+        <img src="./data/colorBlindTest35.png" style="width: 60%" />
+        <p span="caption"> A colorBlindTest image</p>
+        <img src="./data/rgb2gray_results.jpg" style="width: 100%" />
+        <p span="caption"> A Gray colorBlindTest image and its HSV distributions</p>
+
+
+<!-- 
+          <img src=".\data\11_13PM_February_14_2023\cathedral.jpg_square_limit25_CROPFalse_CannyTrue_PyramidFalse_CMEASFalse_methodSSD_shift[[0, -25],[7, -25]]_time_cost 2.1364333629608154.jpg" style="width: 40%;">
+          <p span="caption">Figure 2. Cathedral: SSD, Shift:[0, -25],[7, -25] time cost: 2.13s</p>
+          <p class="w3-justify"><b>Normalized Cross Correlation</b> NNC is calculated     based on the following equation:     </p>
+          <img src="./data/ncc.png" style="width: 40%" />
+          <p class="w3-justify"> where <la-tex>\mu I</la-tex> and<la-tex>\mu H</la-tex> are the luminance of each image.</p>
+          <img src=".\data\11_13PM_February_14_2023\cathedral.jpg_square_limit25_CROPFalse_CannyTrue_PyramidFalse_CMEASFalse_methodNCC_shift[[0, -25],[7, -25]]_time_cost 9.591359376907349.jpg" style="width: 40%;">
+          <p span="caption">Figure 3. Cathedral: NCC, Shift:[0, -25],[7, -25] time cost: 9.59s</p>
+          <h3> Efficiency</h3>
+          <p class="w3-justify">In the above implementation, we construct two for loops to search for the best position in a small window. Comparing and searching image in a small image might work; however, it will take minutes to process a 3500 by 3500 image.
+            We need additional algorithms to pursue efficiency: 
+
+          </p>
+          <p class="w3-justify"><strong>Image Pyramid Search </strong> This is an efficient search
+            algorithm that generally yields good results in less than 60 seconds for
+        high resolution images—up to 9000 pixels. As mentioned above, this
+            algorithm scales down the image by <i>scale_factor</i> times, being
+            <i>scale_factor</i> an automated parameter based on the input image resolution.
+            Given an initial window search, the algorithm searches from coarse to
+            fine images, within the reduced window size, which decreases by a hyperparameter
+            of <i>window_size</i> as the images become larger.<br>
+            
+        </p>
+        <img src="./data/pyramid.jpg" style="width: 40%;">
+        <p span="caption">https://en.wikipedia.org/wiki/Pyramid_(image_processing)</p>
+        <p class="w3-justify">Let's first see how long will it take if we process a 3000 by 3000 image without pyramid search.</p>
+        <img src="./data/train.tifsquare_limit50_CROPFalse_CannyFalse_PyramidFalse_searchFalse_methodSSD.jpg" style="width: 40%" >
+        <p span="caption">Figure 4. Train: SSD w/o Pyramid, time cost: 1857s</p>
+        <img src="./data/train.tifsquare_limit50_CROPFalse_CannyFalse_PyramidFalse_searchFalse_methodNCC.jpg" style="width: 40%" >
+        <p span="caption">Figure 5. Train: NCC w/o Pyramid, time cost: 4486s</p>
+        <p span="caption">https://en.wikipedia.org/wiki/Pyramid_(image_processing)</p>
+        <p class="w3-justify">Let's apply the pyramid search to see how it affect the searching.</p>
+        <img src="./data/train.tifsquare_limit1_CROPFalse_CannyFalse_PyramidTrue_searchFalse_methodSSD.jpg" style="width: 40%" >
+        <p span="caption">Figure 6. Train: SSD with Pyramid, time cost: 19.03s</p>
+        <img src="./data/train.tifsquare_limit1_CROPFalse_CannyFalse_PyramidTrue_searchFalse_methodNCC.jpg" style="width: 40%" >
+        <p span="caption">Figure 7. Train: NCC with Pyramid, time cost: 39.41s</p>
+        <p class="w3-justify">Wow, I believe that is a huge performance increase. But the image quality seems not good enough. We will introduce a few of methods in the following part.</p>
+        <p class="w3-justify">The following are the results with the Pyramid method.</p>
+
+        <h3> Pyramid Results</h3>
+        <img src=".\data\04_11PM_February_14_2023\cathedral.jpg_square_limit25_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[0, -16],[6, -16]]_time_cost 0.7590944766998291.jpg" style="width:  40%;">
+        <p span="caption">Figure 8. cathedral: Shift: [0, -16],[6, -16], time cost: 0.75s</p>
+        <img src=".\data\04_11PM_February_14_2023\emir.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[-9, -78],[64, -35]]_time_cost 55.55182671546936.jpg" style="width:  40%;">
+        <p span="caption">Figure 9. emir: Shift: [-9, -78],[64, -35], time cost: 55.55s</p>
+        <img src=".\data\04_11PM_February_14_2023\harvesters.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[64, -80],[64, -65]]_time_cost 56.50710463523865.jpg" style="width:  40%;">
+        <p span="caption">Figure 10. harvesters: Shift: [64, -80],[64, -65], time cost: 56.50s</p>
+        <img src=".\data\04_11PM_February_14_2023\icon.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[64, -80],[64, -80]]_time_cost 57.38401412963867.jpg" style="width:  40%;">
+        <p span="caption">Figure 11. icon: Shift: [64, -80],[64, -80], time cost: 57.38s</p>
+        <img src=".\data\04_11PM_February_14_2023\lady.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[64, -80],[64, -80]]_time_cost 57.11059498786926.jpg" style="width:  40%;">
+        <p span="caption">Figure 12. lady: Shift: [64, -80],[64, -80], time cost: 57.11s</p>
+        <img src=".\data\04_11PM_February_14_2023\self_portrait.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[42, -80],[64, -80]]_time_cost 58.938451290130615.jpg" style="width:  40%;">
+        <p span="caption">Figure 13. self_portrait: Shift: [42, -80],[64, -80], time cost: 58.93s</p>
+        <img src=".\data\04_11PM_February_14_2023\three_generations.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[52, -80],[64, -80]]_time_cost 56.76436400413513.jpg" style="width:  40%;">
+        <p span="caption">Figure 14. three_generations: Shift: [52, -80],[64, -80], time cost: 56.76s</p>
+        <img src=".\data\04_11PM_February_14_2023\train.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[0, -65],[64, -70]]_time_cost 56.692832708358765.jpg" style="width:  40%;">
+        <p span="caption">Figure 15. train: Shift: [0, -65],[64, -70], time cost: 56.69s</p>
+        <img src=".\data\04_11PM_February_14_2023\turkmen.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[64, -77],[64, -60]]_time_cost 64.7242820262909.jpg" style="width:  40%;">
+        <p span="caption">Figure 16. turkmen: Shift: [64, -77],[64, -60], time cost: 64.72s</p>
+        <img src=".\data\04_11PM_February_14_2023\village.tif_square_limit50_CROPFalse_CannyFalse_PyramidTrue_CMEASFalse_methodNCC_shift[[17, -80],[64, -80]]_time_cost 61.3076376914978.jpg" style="width:  40%;">
+        <p span="caption">Figure 17. village: Shift: [17, -80],[64, -80], time cost: 61.30</p>
+
+      <h3> Bells & Whistles</h3>
+      <P class="w3-justify">
+        <b>Auto Border Crop</b>
+        <p class="w3-justify">The borders seem very annoying: 1. They don't contribute to the final results. 2. They can even mess our matching metric.</p>
+ 
+  -->
+
+      <!-- <div class="w3-row w3-padding-32"> -->
+      <!-- <div class="w3-third">
+            <p>Name</p>
+            <img
+              src="/w3images/bandmember.jpg"
+              class="w3-round w3-margin-bottom"
+              alt="Random Name"
+              style="width: 60%"
+            />
+          </div> -->
+      <!-- <div class="w3-third">
+            <p>Name</p>
+            <img
+              src="/w3images/bandmember.jpg"
+              class="w3-round w3-margin-bottom"
+              alt="Random Name"
+              style="width: 60%"
+            />
+          </div>
+          <div class="w3-third">
+            <p>Name</p>
+            <img
+              src="/w3images/bandmember.jpg"
+              class="w3-round"
+              alt="Random Name"
+              style="width: 60%"
+            />
+          </div> -->
+      <!-- </div> -->
+    </div>
+
+    <!-- The Tour Section -->
+    <div class="w3-black" id="tour">
+      <div
+        class="w3-container w3-content w3-padding-64"
+        style="max-width: 800px"
+      >
+        <h2 class="w3-wide w3-center">Project List</h2>
+        <p class="w3-opacity w3-center">
+          <!-- <i>Remember to book your tickets!</i> -->
+        </p>
+        <br />
+
+        <ul class="w3-ul w3-border w3-white w3-text-grey">
+          <li class="w3-padding" id="proj_0">
+            <a href="../proj0/index.html"> Project 0  </a>
+            <img src="../proj0/data/laguna_beach.jpeg" style="width: 40%;">
+
+            <span class="w3-tag w3-green w3-margin-left">Finished</span>
+          </li>
+          <li  class="w3-padding" id="proj_1">
+            <a href="./index.html"> Project 1  </a>
+            <img src="./data/HARVESTORanime.gif" style="width: 40%;">
+            <span class="w3-tag w3-green w3-margin-left">Finished</span>
+          </li>
+          <li  class="w3-padding" id="proj_2">
+            <a href="./index.html"> Project 2  </a>
+            <img src="./data/results_source_01_newsource_target_01Mixed Blend.jpg" style="width: 40%;">
+            <span class="w3-tag w3-green w3-margin-left">Finished</span>
+          </li>
+          <!-- <li class="w3-padding">
+              October <span class="w3-tag w3-red w3-margin-left">Sold out</span>
+            </li>
+            <li class="w3-padding">
+              November <span class="w3-badge w3-right w3-margin-right">3</span>
+            </li> -->
+        </ul>
+
+        <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
+          <!-- <div class="w3-third w3-margin-bottom">
+              <img
+                src="/w3images/newyork.jpg"
+                alt="New York"
+                style="width: 100%"
+                class="w3-hover-opacity"
+              />
+              <div class="w3-container w3-white">
+                <p><b>New York</b></p>
+                <p class="w3-opacity">Fri 27 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button
+                  class="w3-button w3-black w3-margin-bottom"
+                  onclick="document.getElementById('ticketModal').style.display='block'"
+                >
+                  Buy Tickets
+                </button>
+              </div>
+            </div> -->
+          <!-- <div class="w3-third w3-margin-bottom">
+              <img
+                src="/w3images/paris.jpg"
+                alt="Paris"
+                style="width: 100%"
+                class="w3-hover-opacity"
+              />
+              <div class="w3-container w3-white">
+                <p><b>Paris</b></p>
+                <p class="w3-opacity">Sat 28 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button
+                  class="w3-button w3-black w3-margin-bottom"
+                  onclick="document.getElementById('ticketModal').style.display='block'"
+                >
+                  Buy Tickets
+                </button>
+              </div>
+            </div> -->
+          <!-- <div class="w3-third w3-margin-bottom">
+              <img
+                src="/w3images/sanfran.jpg"
+                alt="San Francisco"
+                style="width: 100%"
+                class="w3-hover-opacity"
+              />
+              <div class="w3-container w3-white">
+                <p><b>San Francisco</b></p>
+                <p class="w3-opacity">Sun 29 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button
+                  class="w3-button w3-black w3-margin-bottom"
+                  onclick="document.getElementById('ticketModal').style.display='block'"
+                >
+                  Buy Tickets
+                </button>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="w3-modal">
+      <!-- <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-teal w3-center w3-padding-32">
+            <span
+              onclick="document.getElementById('ticketModal').style.display='none'"
+              class="w3-button w3-teal w3-xlarge w3-display-topright"
+              >×</span
+            >
+            <h2 class="w3-wide">
+              <i class="fa fa-suitcase w3-margin-right"></i>Tickets
+            </h2>
+          </header>
+          <div class="w3-container">
+            <p>
+              <label
+                ><i class="fa fa-shopping-cart"></i> Tickets, $15 per
+                person</label
+              >
+            </p>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="How many?"
+            />
+            <p>
+              <label><i class="fa fa-user"></i> Send To</label>
+            </p>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Enter email"
+            />
+            <button
+              class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right"
+            >
+              PAY <i class="fa fa-check"></i>
+            </button>
+            <button
+              class="w3-button w3-red w3-section"
+              onclick="document.getElementById('ticketModal').style.display='none'"
+            >
+              Close <i class="fa fa-remove"></i>
+            </button>
+            <p class="w3-right">
+              Need <a href="#" class="w3-text-blue">help?</a>
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- The Contact Section -->
+      <div
+        class="w3-container w3-content w3-padding-64"
+        style="max-width: 800px"
+        id="contact"
+      >
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>We can be good friends.</i></p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width: 30px"></i> Pittsburgh, PA,
+            US<br />
+            <!-- <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br /> -->
+            <i class="fa fa-envelope" style="width: 30px"> </i> Email:
+            linjiw@andrew.cmu.edu
+            <br />
+          </div>
+          <!--<div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
+                <div class="w3-half">
+                  <input
+                    class="w3-input w3-border"
+                    type="text"
+                    placeholder="Name"
+                    required
+                    name="Name"
+                  />
+                </div>
+                <div class="w3-half">
+                  <input
+                    class="w3-input w3-border"
+                    type="text"
+                    placeholder="Email"
+                    required
+                    name="Email"
+                  />
+                </div>
+              </div>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Message"
+                required
+                name="Message"
+              />
+              <button
+                class="w3-button w3-black w3-section w3-right"
+                type="submit"
+              >
+                SEND
+              </button>
+            </form>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- End Page Content -->
+    </div>
+
+    <!-- Image of location/map -->
+    <!-- <img
+      src="/w3images/map.jpg"
+      class="w3-image w3-greyscale-min"
+      style="width: 100%"
+    /> -->
+
+    <!-- Footer -->
+    <footer
+      class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"
+    >
+      <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+      <a
+        class="fa fa-instagram w3-hover-opacity"
+        href="https://www.instagram.com/joewwwang/"
+      ></a>
+      <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
+      <a
+        class="fa fa-linkedin w3-hover-opacity"
+        href="https://www.linkedin.com/in/linjiw/"
+      ></a>
+      <p class="w3-medium">
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Automatic Slideshow - change image every 4 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName('mySlides');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = 'block';
+        setTimeout(carousel, 4000);
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById('navDemo');
+        if (x.className.indexOf('w3-show') == -1) {
+          x.className += ' w3-show';
+        } else {
+          x.className = x.className.replace(' w3-show', '');
+        }
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      var modal = document.getElementById('ticketModal');
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      };
+
+    
+    </script>
+  </body>
+</html>
