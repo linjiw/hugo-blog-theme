@@ -24,7 +24,7 @@ featured: false
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
   caption: 'Image credit: [**Prokudin-Gorskii Collection
-**](https://tile.loc.gov/storage-services/service/pnp/ppem/01600/01638r.jpg)'
+**](./data/service-pnp-ppem-01600-01638v.jpg)'
   focal_point: ""
   placement: 2
   preview_only: false
