@@ -75,10 +75,10 @@ social:
 #email: ""
 ---
 
-#Current
-I'm looking for Ph.D. position in machine learning.
+## Current
+I'm looking for Ph.D. position in computer science.
 
-#Short Bio
+## Short Bio
 
-Linji Wang is a second-year master student at the Mechanical Engineering Department, Carnegie Mellon University, researching AI and ML problems. Linji's primary research interests are on machine learning, computer vision, reinforcement learning and their intersections.
+Linji Wang is a second-year master student at the [**Mechanical Engineering Department, Carnegie Mellon University**](https://www.meche.engineering.cmu.edu/), researching AI and ML problems. Linji's primary research interests are on machine learning, computer vision, reinforcement learning and their intersections.
 
