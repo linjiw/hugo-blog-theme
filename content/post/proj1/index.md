@@ -3,10 +3,7 @@ title: Colorizing the Prokudin-Gorskii Photo Collection
 subtitle: Welcome 👋 We know that first impressions are important, so we've populated your new site with some initial content to help you get familiar with everything in no time.
 
 # Summary for listings and search engines
-summary: This project requires you to use image processing techniques to create a color image from the digitized Prokudin-Gorskii glass plate photographs, with the goal of producing an image with as few visual artifacts as possible.
-
-
-A digital picture of a glass plate, with its three channels arranged from top to bottom as BGR (see Figure 1), serves as the process's input. Our task is to isolate the three channels and properly align them.
+summary: This project requires you to use image processing techniques to create a color image from the digitized Prokudin-Gorskii glass plate photographs, with the goal of producing an image with as few visual artifacts as possible. A digital picture of a glass plate, with its three channels arranged from top to bottom as BGR (see Figure 1), serves as the process's input. Our task is to isolate the three channels and properly align them.
 
 # Link this post with a project
 projects: []
@@ -50,7 +47,12 @@ Image matching means to manipulate image to ensure the best results for your sim
 
 **Sum of Squared Differences** SSD  is calculated     based on the following equation:
 
-{{< figure src="./data/ssd.png" title="The template is mobile first with a responsive design to ensure that your site looks stunning on every device." >}}
+{{< figure src="./data/ssd.png" title="SSD Equation" >}}
+
+where *I* and  *H* are function of two images and *x*,*y* are pixels positions.
+
+{{< figure src="./data/ncc.png" title="SSD Equation" >}}
+
 
 ## Get Started
 
