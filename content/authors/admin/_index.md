@@ -6,7 +6,7 @@ title: Linji Wang (王琳箕)
 superuser: true
 
 # Role/position
-role: Incoming PhD Student
+role: Incoming CS PhD Student
 
 # Status emoji
 status:
@@ -53,14 +53,14 @@ social:
 # - icon: twitter
 #   icon_pack: fab
 #   link: https://twitter.com/wowchemy
-# - icon: instagram
-#   icon_pack: fab
-#   link: https://instagram.com/geocushen
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/linjiw/
 
 # Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
+- icon: github
+ icon_pack: fab
+ link: https://github.com/linjiw
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -75,5 +75,10 @@ social:
 #email: ""
 ---
 
-Linji Wang is a highly motivated and accomplished individual with a passion for computer science and mechanical engineering. He holds a Master of Science in Mechanical Engineering from Carnegie Mellon University, where he focused on machine learning, computer vision, and deep reinforcement learning. Linji also earned a Bachelor of Science in Mechanical Engineering from the University of Cincinnati, where he participated in a joint program with Chongqing University in China.
+#Current
+I'm looking for Ph.D. position in machine learning.
+
+#Short Bio
+
+Linji Wang is a second-year master student at the Mechanical Engineering Department, Carnegie Mellon University, researching AI and ML problems. Linji's primary research interests are on machine learning, computer vision, reinforcement learning and their intersections.
 
