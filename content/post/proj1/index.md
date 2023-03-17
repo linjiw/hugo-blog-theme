@@ -23,8 +23,7 @@ featured: false
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: 'Image credit: [**Prokudin-Gorskii Collection
-**](./data/service-pnp-ppem-01600-01638v.jpg)'
+  caption: 'Image credit: Prokudin-Gorskii Collection'
   focal_point: ""
   placement: 2
   preview_only: false
@@ -35,6 +34,7 @@ authors:
 
 tags:
 - Computer Vision
+- Image Editing
 # - 开源
 
 categories:
@@ -52,7 +52,13 @@ Image matching means to manipulate image to ensure the best results for your sim
 
 where *I* and  *H* are function of two images and *x*,*y* are pixels positions.
 
-{{< figure src="./data/ncc.png" title="SSD Equation" >}}
+{{< figure src=".\data\11_13PM_February_14_2023\cathedral.jpg_square_limit25_CROPFalse_CannyTrue_PyramidFalse_CMEASFalse_methodSSD_shift[[0, -25],[7, -25]]_time_cost 2.1364333629608154.jpg" title="Figure 2. Cathedral: SSD, Shift:[0, -25],[7, -25] time cost: 2.13s" >}}
+
+
+
+**Normalized Cross Correlation** NNC is calculated     based on the following equation: 
+
+{{< figure src="./data/ncc.png" title="NCC Equation" >}}
 
 
 ## Get Started
