@@ -1,6 +1,6 @@
 ---
 title: Colorizing the Prokudin-Gorskii Photo Collection
-subtitle: Welcome 👋 We know that first impressions are important, so we've populated your new site with some initial content to help you get familiar with everything in no time.
+subtitle: The Vibrant Transformation of Prokudin-Gorskii's Photo Archive
 
 # Summary for listings and search engines
 summary: This project requires you to use image processing techniques to create a color image from the digitized Prokudin-Gorskii glass plate photographs, with the goal of producing an image with as few visual artifacts as possible. A digital picture of a glass plate, with its three channels arranged from top to bottom as BGR (see Figure 1), serves as the process's input. Our task is to isolate the three channels and properly align them.
@@ -23,7 +23,8 @@ featured: false
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
+  caption: 'Image credit: [**Prokudin-Gorskii Collection
+**](https://tile.loc.gov/storage-services/service/pnp/ppem/01600/01638r.jpg)'
   focal_point: ""
   placement: 2
   preview_only: false
