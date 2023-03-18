@@ -26,16 +26,73 @@ featured: false
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: 'Image credit: Prokudin-Gorskii Collection'
+  caption: 'DCGAN Results'
   focal_point: ""
   placement: 2
   preview_only: false
 ---
 
+## Introduction
 
 
+In this assignment, we get hands-on experience coding and training GANs. This assignment includes two parts:
 
+Implementing a Deep Convolutional GAN (DCGAN) to generate grumpy cats from samples of random noise.
+Implementing a more complex GAN architecture called CycleGAN for the task of image-to-image translation. We train the CycleGAN to convert between different types of two kinds of cats (Grumpy and Russian Blue) and between apples and oranges.
 
+## Part 1: Deep Convolutional GAN
+
+For the first part of this assignment, we implement a slightly modified version of Deep Convolutional GAN (DCGAN).
+
+### Implement Data Augmentation
+Implemented the deluxe version of data augmentation in 'data_loader.py'.
+
+```python
+elif opts.data_preprocess == 'deluxe':
+    # add addtional data augmentation here
+    # load_size = int(1.1 * opts.image_size)
+    # osize = [load_size, load_size]
+    # transforms.Resize(osize, Image.BICUBIC)
+    # transforms.RandomCrop(opts.image_size)
+    # transforms.RandomHorizontalFlip()
+    pass
+```
+
+### Implement the Discriminator of the DCGAN
+(Answer for padding calculation goes here)
+
+Implemented the architecture by filling in the '__init__' and 'forward' method of the 'DCDiscriminator' class in 'models.py'.
+
+```python
+def __init__(self, conv_dim=64):
+    ...
+    # self.conv1 = conv(...)
+    # self.conv2 = conv(...)
+    # self.conv3 = conv(...)
+    # self.conv4 = conv(...)
+    # self.conv5 = conv(...)
+    
+def forward(self, x):
+    ...
+    pass
+```
+
+### Generator
+Implemented the generator of the DCGAN by filling in the '__init__' and 'forward' method of the 'DCGenerator' class in 'models.py'.
+
+```python
+Copy code
+def __init__(self, conv_dim=64):
+    ...
+    # self.up_conv1 = ...
+    # self.up_conv2 = ...
+    # self.up_conv3 = ...
+    # self.up_conv4 = ...
+    
+def forward(self, x):
+    ...
+    pass
+```
 
 
 
