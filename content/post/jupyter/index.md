@@ -12,6 +12,10 @@ lastMod: "2019-09-05T00:00:00Z"
 image:
   caption: ""
   focal_point: ""
+
+# Is this an unpublished draft?
+draft: true
+
 ---
 
 ```python
