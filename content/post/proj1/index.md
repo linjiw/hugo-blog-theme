@@ -52,7 +52,7 @@ Image matching means to manipulate image to ensure the best results for your sim
 
 where *I* and  *H* are function of two images and *x*,*y* are pixels positions.
 
-{{< figure src=".\data\11_13PM_February_14_2023\cathedral.jpg_square_limit25_CROPFalse_CannyTrue_PyramidFalse_CMEASFalse_methodSSD_shift[[0, -25],[7, -25]]_time_cost 2.1364333629608154.jpg" title="Figure 2. Cathedral: SSD, Shift:[0, -25],[7, -25] time cost: 2.13s" >}}
+{{< figure src="./data/11_13PM_February_14_2023/cathedral.jpg_square_limit25_CROPFalse_CannyTrue_PyramidFalse_CMEASFalse_methodSSD_shift[[0, -25],[7, -25]]_time_cost 2.1364333629608154.jpg" title="Figure 2. Cathedral: SSD, Shift:[0, -25],[7, -25] time cost: 2.13s" >}}
 
 
 
