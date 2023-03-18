@@ -178,75 +178,63 @@ INSERT IMAGE: With --data_preprocess=deluxe and differentiable augmentation enab
 
 (Brief comment on the quality of the samples, and in what way they improve through training)
 
+## Part 2: CycleGAN
+Implemented the CycleGAN architecture.
 
+### Data Augmentation
+Set the --data_preprocess flag to deluxe.
 
-
-
-```python
-from IPython.core.display import Image
-Image('https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png')
-```
-
-
-
-
-![png](./index_1_0.png)
-
-
-
+### Generator
+Implemented the generator architecture by completing the __init__ method of the CycleGenerator class in models.py.
 
 ```python
-print("Welcome to Academic!")
+def __init__(self, conv_dim=64, init_zero_weights=False, norm='instance'):
+    super().__init__()
+
+    # # 1. Define the encoder part of the generator
+    self.conv1 = conv(3, 32, 4, 2, 1, norm, False, 'relu')
+    self.conv2 = conv(32, 64, 4, 2, 1, norm, False, 'relu')
+
+    # # 2. Define the transformation part of the generator
+    self.resnet_block = nn.Sequential(ResnetBlock(conv_dim = 64, norm = norm, activ = 'relu'),
+                                      ResnetBlock(conv_dim = 64, norm = norm, activ = 'relu'),
+                                      ResnetBlock(conv_dim = 64, norm = norm, activ = 'relu'),)
+
+    # # 3. Define the decoder part of the generator
+    self.up_conv1 = up_conv(64, 32, 3, stride=1, padding=1, scale_factor=2, norm='instance', activ='relu')
+    self.up_conv2 = up_conv(32, 3, 3, stride=1, padding=1, scale_factor=2, norm= None, activ='tanh')
+
+def forward(self, x):
+    """
+    Generate an image conditioned on an input image.
+
+    Input
+    -----
+        x: BS x 3 x 32 x 32
+
+    Output
+    ------
+        out: BS x 3 x 32 x 32
+    """
+    x = self.conv1(x)
+    x = self.conv2(x)
+    x = self.resnet_block(x)
+    x = self.up_conv1(x)
+    x = self.up_conv2(x)
+
+    return x
 ```
+### Training Loop
+Implemented the training loop for the CycleGAN by filling in the indicated parts of the training_loop function in cycle_gan.py.
 
-    Welcome to Academic!
+### Experiment with CycleGAN
+INSERT IMAGE: Two example images of generated Grumpy cats from Russian Blue cats, and two example images of generated Russian Blue cats from Grumpy cats.
 
+(Brief comment on the quality of the generated images, and whether the CycleGAN has captured the main differences between the two domains)
 
-## Install Python and JupyterLab
+INSERT IMAGE: Two example images of generated apples from oranges, and two example images of generated oranges from apples.
 
-[Install Anaconda](https://www.anaconda.com/distribution/#download-section) which includes Python 3 and JupyterLab.
+(Brief comment on the quality of the generated images, and whether the CycleGAN has captured the main differences between the two domains)
 
-Alternatively, install JupyterLab with `pip3 install jupyterlab`.
-
-## Create or upload a Jupyter notebook
-
-Run the following commands in your Terminal, substituting `<MY-WEBSITE-FOLDER>` and `<SHORT-POST-TITLE>` with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:
-
-```bash
-mkdir -p <MY-WEBSITE-FOLDER>/content/post/<SHORT-POST-TITLE>/
-cd <MY-WEBSITE-FOLDER>/content/post/<SHORT-POST-TITLE>/
-jupyter lab index.ipynb
-```
-
-The `jupyter` command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.
-
-## Edit your post metadata
-
-The first cell of your Jupter notebook will contain your post metadata ([front matter](https://sourcethemes.com/academic/docs/front-matter/)).
-
-In Jupter, choose _Markdown_ as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter: 
-
-```
----
-title: My post's title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-```
-
-Edit the metadata of your post, using the [documentation](https://sourcethemes.com/academic/docs/managing-content) as a guide to the available options.
-
-To set a [featured image](https://sourcethemes.com/academic/docs/managing-content/#featured-image), place an image named `featured` into your post's folder.
-
-For other tips, such as using math, see the guide on [writing content with Academic](https://sourcethemes.com/academic/docs/writing-markdown-latex/). 
-
-## Convert notebook to Markdown
-
-```bash
-jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
-```
-
-## Example
-
-This post was created with Jupyter. The orginal files can be found at https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter
+## Conclusion
+This report presents our implementation of DCGAN and CycleGAN for various image generation tasks. Through these experiments, we have observed the impact of data augmentation and differentiable augmentation on the training process and final results. We have also seen the capabilities of CycleGAN in generating realistic images for domain-to-domain translation tasks, such as converting Grumpy cats to Russian Blue cats and vice versa, and converting apples to oranges and vice versa.
